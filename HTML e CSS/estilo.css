@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(156, 156, 156);
+}
+h1 {
+    color: rgb(197, 27, 248);
+}
+b {
+    color: aliceblue;
+}
+strong {
+    color: aliceblue;
+}
+mark {
+    background-color: rgb(103, 255, 230);
+}
+a {
+    color: aqua;
+}
