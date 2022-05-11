@@ -7,6 +7,7 @@ print(f'Sua meta é de {meta} por semana.')
 
 for c in range(0,4):
     sit = str(input(f'Houve queda de energia na semana {c+1}?  ')).strip().lower()[0]
+    
     if 's' in sit:
         total += semana * perda
     else:
@@ -14,4 +15,4 @@ for c in range(0,4):
     if total < meta * (c + 1):
         print('Você não atingiu a meta.')
 
-print(f'Você totalizou {total} peças este mês.')
+print(f'Você totalizou {total} peças este mês.') 
