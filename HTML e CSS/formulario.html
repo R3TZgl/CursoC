@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body class="Form">
+    <h1>Formulário</h1>
+    <h2>Dados</h2>
+    <form action="">
+        <label for="nome">Primeiro Nome:</label>
+        <br>
+        <input type="text" name="nome">
+        <br>
+        <label for="sobrenome">Sobrenome</label>
+        <br>
+        <input type="text" name="sobrenome">
+        <br><br>
+        <input type="button" name="botao" value="Botão">
+
+        <br><br>
+        <h3>O que achou do site?</h3>
+        <input type="radio" name="opcao" checked>Muito Bom
+        <input type="radio" name="opcao">Bom
+        <input type="radio" name="opcao">Regular
+        <input type="radio" name="opcao">Ruim
+        <input type="radio" name="opcao">Muito Ruim
+        <!-- name relaciona -->
+
+        <br><br>
+        <h3>Qual seção você mais gosta?</h3>
+        <select name="secao" >
+            <option value="cartaz">Em cartaz</option>
+            <option value="estreia">Estréia</option>
+            <option value="preEstreia">Pré estréia</option>
+        </select>
+        <label for="outro">Outro:</label>
+        <input type="text" name="outro">
+        
+        <br><br>
+        <textarea name="areatexto" 
+                  maxlength="50" cols="30" 
+                  rows="10"></textarea>
+
+        <br><br>
+
+        <label>Nome</label><br>
+        <label><input type="text" name="nome"></label>
+        <br>
+        <label>Email</label><br>
+        <td><input type="text" name="email" ></td>
+
+
+        <br><br>
+        <input type="checkbox">Hoje está está chovendo
+
+        <br><br>
+        <input type="submit" name="enviar" value="Enviar">
+        <!-- submit pega todos os dados e empacota para levar -->
+        <input type="reset" name="reset" value="Limpar">
+    </form>
+</body>
+</html>
