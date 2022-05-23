@@ -1,0 +1,16 @@
+.teste {
+    border: 5px outset rgb(255, 0, 179);
+    background-color: rgb(87, 27, 99);
+    text-align: center;
+    color: rgb(173, 173, 255);
+}
+body {
+    background-color: rgb(72, 93, 133);
+}
+h1 {
+    color: rgb(204, 255, 248);
+    text-align: center;
+}
+header {
+    background-color: aquamarine;
+}

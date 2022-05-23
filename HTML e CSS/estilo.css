@@ -59,3 +59,11 @@ h2,h3{
 textarea{
     background-color:rgb(235, 245, 241);
 }
+
+
+.Teste{
+    border: 5px outset red;
+    background-color: lightcoral;
+    text-align: center;
+    color: blue;
+};

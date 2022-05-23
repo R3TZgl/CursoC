@@ -7,3 +7,13 @@ for (var elemento of teste){
   lista.push(escolha)
   console.log(escolha);
 };
+
+function soma(numero1, numero2){
+    return numero1 + numero2
+}
+console.log(soma(1,4))
+
+for (i = 0; i <= 10; i ++){
+    console.log(i)
+};
+
