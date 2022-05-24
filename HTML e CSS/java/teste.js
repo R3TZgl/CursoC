@@ -17,3 +17,19 @@ for (i = 0; i <= 10; i ++){
     console.log(i)
 };
 
+var total = 0
+while (true){
+    console.log(1)
+    total ++
+    if (total === 3){
+        break
+    }
+}
+
+function somaTot(num){
+    if (num === 1){
+        return 1
+    }
+    return num + somaTot(num - 1)
+}
+somaTot(3)
