@@ -5,3 +5,4 @@ function cont(numero){
     return numero + cont(numero - 1)
 }   
 console.log(cont(3))
+

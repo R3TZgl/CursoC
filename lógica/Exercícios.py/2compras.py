@@ -18,3 +18,8 @@ for c in itens:
     print(f'{c}: R${lista[c]:.2f}')
 
 print(total)
+
+def 
+
+for i in range(0,10):
+    print(i)
