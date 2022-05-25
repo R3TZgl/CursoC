@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        
+        var objeto = {cachorro: [5, 8, 4], animal: 3}
+        alert(objeto.cachorro[1])
+         
+        
+        
+        var dados = {};
+        var info = ["Nome", "Endereço", "Cidade", "UF", "CEP", "Telefone", "CEP", "RG", "Data de Nascimento", "Grau de Escolaridade", "Curso"];
+        for (c of info){
+            if (c === info[4] || c === info[5] || c === info[6] || c === info[7] || c === info[8]){
+              dados.c = parseInt(prompt(c + ":"))  
+            }
+            else{
+                while (true){
+                    dados.c = prompt(c + ":")
+                    if (dados.c != ""){
+                        break
+                    }
+                    else{
+                        console.log("Erro, insira os dados corretamente.")
+                    }
+                }
+            }
+        };
+        for (c of info){
+            alert(c + ": " + dados.c)
+        };</script>
+</head>
+<body>
+    
+</body>
+</html>

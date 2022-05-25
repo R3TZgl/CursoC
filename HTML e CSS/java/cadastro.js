@@ -1,5 +1,7 @@
 var dados = {};
-var info = ["Nome", "Endereço", "Cidade", "UF", "CEP", "Telefone", "CEP", "RG", "Data de Nascimento", "Grau de Escolaridade", "Curso"];
+var info = ["Nome", "Endereço", "Cidade", "UF", "CEP", "Telefone", "CEP",
+            "RG", "Data de Nascimento", "Grau de Escolaridade", "Curso"];
+
 for (c of info){
     if (c === info[4] || c === info[5] || c === info[6] || c === info[7] || c === info[8]){
       dados.c = parseInt(prompt(c + ":"))  
@@ -11,11 +13,11 @@ for (c of info){
                 break
             }
             else{
-                console.log("Erro, insira os dados corretamente.")
-            }
-        }
-    }
+                alert("Erro, insira os dados corretamente.")
+            };
+        };
+    };
 };
 for (c of info){
-    console.log(c + ": " + dados.c)
+    alert(c + ": " + dados.c)
 };
