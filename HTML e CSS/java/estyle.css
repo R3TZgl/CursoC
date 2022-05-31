@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(98, 50, 110);
+    text-align: center;
+}
+.base{
+    color: plum;
+    text-shadow: 0px 0px 50px plum;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+select,input{
+    background-color: rgb(141, 255, 126);
+    border-radius: 6px;
+    border-color: rgb(146, 26, 150);
+    filter: drop-shadow(5px 2px 5px #222);
+}
+button{
+    border-radius: 6px;
+    border-color: rgb(146, 26, 150);
+    background-color: rgb(141, 255, 126);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+.titulo{
+    color: rgb(141, 255, 126);
+    font-size: 100px;
+    text-shadow: 0px 0px 70px rgb(141, 255, 126);
+}
+.bat{
+    filter: drop-shadow(5px 5px 5px rgb(34, 34, 34));
+    width:50%;
+}
+

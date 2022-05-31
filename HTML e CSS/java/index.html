@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estyle.css">
+    <link rel="fonts" href="/imagens/adrip1.ttf">
     <script src="novo.js"></script>
 </head>
-<body>
-    <h1>Digite um número</h1>
-    <input type="number" name="" id="num1">
+<body>   
+    <h1 class="titulo">???</h1>
+    <div>
+        <h1 class="base">Digite um número</h1>
+        <input type="number" name="" id="num1" placeholder="Digite um número">
 
-    <h1>Digite mais um número</h1>
-    <input type="number" id="num2">
+        <h1 class="base">Digite mais um número</h1>
+        <input type="number" id="num2" placeholder="Digite um número">
 
-    <h1>O que você quer fazer?</h1>
-    <select name="escolha" id="escolha">
-        <option value="+">Somar</option>
-        <option value="-">Subtrair</option>
-        <option value="x">Multiplicar</option>
-        <option value="/">Dividir</option>
-    </select>
+        <h1 class="base">O que você quer fazer?</h1>
+        <select name="escolha" id="escolha">
+            <option value="+">Somar</option>
+            <option value="-">Subtrair</option>
+            <option value="x">Multiplicar</option>
+            <option value="/">Dividir</option>
+        </select>
 
-    <button onclick="iniciar()">Fazer</button>
+        <button onclick="iniciar()">Fazer</button>
+    </div>
+    <br>
+    <img src="/imagens/batman.png" class="bat">
 
 </body>
 </html>
