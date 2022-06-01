@@ -1,8 +1,8 @@
 listaA = []
 listaB = []
 
-for c in range(0,15):
+for c in range(0,20):
     listaA.append(int(input("Digite um número: ")))
-    listaB.append(listaA[c] ** 2)
+    listaB.insert(0 ,listaA[c])
 
 print(listaA, listaB)

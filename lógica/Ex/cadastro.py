@@ -11,3 +11,6 @@ for c in info:
 
 for c in info:
     print(f'{c}: {dados[c]}')
+
+    dados["Nome"] = "sim"
+    print(dados["Nome"][2])
