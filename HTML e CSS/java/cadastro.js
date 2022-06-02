@@ -4,8 +4,8 @@ var info = ["Nome", "Endereço", "Cidade", "UF", "CEP", "Telefone", "CEP",
 
 for(c of info){ 
     while (true){
-        dados.c = prompt(c + ":")
-        if (dados.c != ""){
+        dados[c] = prompt(c + ":")
+        if (dados[c] != ""){
             break
         }
         else{
@@ -14,9 +14,9 @@ for(c of info){
     };
 };
 for (c of info){
-    alert(c + ": " + dados.c)
+    alert(c + ": " + dados[c])
 };
 
 
 var objeto = {cachorro: ["pinscher", "bulldog"]}
-console.log(objeto.cachorro[1])
+console.log(objeto.cachorro[1]);

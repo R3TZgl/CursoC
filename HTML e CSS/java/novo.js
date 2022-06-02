@@ -5,8 +5,8 @@ function novo(){
 
 
 function iniciar(){
-    var numero1 = parseInt(document.getElementById("num1").value)
-    var numero2 = parseInt(document.getElementById("num2").value)
+    var numero1 = Number(document.getElementById("num1").value)
+    var numero2 = Number(document.getElementById("num2").value)
 
     if (document.getElementById("escolha").value === "+"){
         let valor =  numero1 + numero2 
