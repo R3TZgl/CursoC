@@ -25,7 +25,7 @@ class Cachorro():
         
         
 def cadastro(pessoa, contador):
-    pessoas[f"{pessoa}{contador}"] = pessoa
+    pessoas[f"pessoa{contador}"] = pessoa
     print(f"a pessoa {pessoa.nome} foi cadastrada")
     
             
@@ -47,14 +47,14 @@ while True:
     dog1 = Cachorro(nome_dog, cor)
     pessoa = Pessoa(nome, idade, dog1)
 
-    print(f"Olá {pessoa.nome} e {dog1.nome}, sejam bem-vindos ao petshop.")
+    print(f"\nOlá {pessoa.nome} e {dog1.nome}, sejam bem-vindos ao petshop.")
     print(f"Não se esqueça, o número do seu cadastro é {contador}.")
     print(f"Vamos brincar com o {dog1.nome} então?")
     
     
     #PetShop
     while True:
-        resposta = int(input("Digite 1 para dar a patinha, 2 para ele latir ou 0 para os dois: "))
+        resposta = int(input("\nDigite 1 para dar a patinha, 2 para ele latir ou 0 para os dois: "))
         while True:
             if resposta == 0:
                 pessoa.treinar()
@@ -68,8 +68,8 @@ while True:
             else:
                 print("ERRO! Digite um escolha válida!")
             
-        cont = str(input("Quer continuar? ").strip().lower())[0]
         while True:
+            cont = str(input("\nQuer continuar? ").strip().lower())[0]
             if cont != "n" and cont != "s":
                 print("ERRO! Digite um sim ou não.")
             else:
@@ -79,13 +79,13 @@ while True:
             break
     
     cadastro(pessoa, contador)
-    
-    proximo = str(input("Quer cadastrar outra pessoa? ").strip().lower())[0]    
+       
     while True:
-            if proximo != "n" and proximo != "s":
-                print("ERRO! Digite um sim ou não.")
-            else:
-                break
+        proximo = str(input("\nQuer cadastrar outra pessoa? ").strip().lower())[0] 
+        if proximo != "n" and proximo != "s":
+            print("ERRO! Digite um sim ou não.")
+        else:
+            break
                  
                         
     if proximo == "n":
@@ -93,15 +93,15 @@ while True:
   
   
       
-print("Cadastros efetuados:")
+print("\nCadastros efetuados:")
 for c in pessoas:
     print(pessoas[c].nome)
     
     
-acesso = int(input("Digite o número do seu cadastro para acessar seus dados:"))
+acesso = int(input("\nDigite o número do seu cadastro para acessar seus dados:"))
 
-print(f"Nome: {pessoas[f'pessoa{acesso}'].nome}")
-print(f"Idade: {pessoas[f'pessoa{acesso}.'].idade}")
-print(f"Nome do Cachorro: {pessoas[f'pessoa{acesso}.'].cao.nome}")
-print(f"Cor do Cachorro: {pessoas[f'pessoa{acesso}.'].cao.cor}")
+print(f'\nNome: {pessoas[f"pessoa{acesso}"].nome}')
+print(f'Idade: {pessoas[f"pessoa{acesso}"].idade}')
+print(f'Nome do Cachorro: {pessoas[f"pessoa{acesso}"].cao.nome}')
+print(f'Cor do Cachorro: {pessoas[f"pessoa{acesso}"].cao.cor}')
         
