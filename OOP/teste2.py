@@ -97,11 +97,17 @@ print("\nCadastros efetuados:")
 for c in pessoas:
     print(pessoas[c].nome)
     
-    
-acesso = int(input("\nDigite o número do seu cadastro para acessar seus dados:"))
+while True:    
+    acesso = int(input("\nDigite o número do seu cadastro para acessar seus dados:"))
+    if acesso < 1 or acesso > len(pessoas):
+        print("ERRO! Esse cadastro não existe.")
+    else: 
+        break
+        
 
 print(f'\nNome: {pessoas[f"pessoa{acesso}"].nome}')
 print(f'Idade: {pessoas[f"pessoa{acesso}"].idade}')
 print(f'Nome do Cachorro: {pessoas[f"pessoa{acesso}"].cao.nome}')
 print(f'Cor do Cachorro: {pessoas[f"pessoa{acesso}"].cao.cor}')
         
+print("\nSitema Finalizado.")
