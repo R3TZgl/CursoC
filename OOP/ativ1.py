@@ -41,5 +41,5 @@ class LivroDigital(Livro):
         
 livro1 = LivroDigital("O susto", "234", "20", "120", "280", "pdf")
 
-print(livro1.baixar())
+livro1.baixar()
   
