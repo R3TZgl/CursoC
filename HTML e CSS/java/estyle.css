@@ -28,3 +28,23 @@ button{
     filter: drop-shadow(5px 5px 5px rgb(34, 34, 34));
     width:50%;
 }
+select:hover,button:hover,input:hover{
+    background-color: rgb(46, 255, 18);
+}
+.titulo:hover{
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0px 70px rgb(255, 63, 63);
+}
+#treme:hover{
+    position: relative;
+    animation-name: treme;
+    animation-duration: 0.2s;
+  }
+  
+  @keyframes treme {
+    0%   { left:0px; top:0px;}
+    25%  { left:1px; top:1px;}
+    50%  { left:0px; top:0px;}
+    75%  { left:-1px; top:-1px;}
+    100% { left:0px; top:0px;}
+}
