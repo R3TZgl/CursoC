@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(58, 58, 58);
+}
+form{
+    margin-left: 1%;
+}
+input{
+    margin: 1%;
+    background-color: rgb(232, 192, 255);
+}
+label{
+    color: white;
+}
+button{
+    background-color: rgb(202, 110, 255);
+}
+#superior, #credenciais{
+    color: white;
+    margin: 1%;
+}
