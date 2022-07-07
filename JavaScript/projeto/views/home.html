@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/projeto/assets/css/produto.css">
     <title>Home</title>
 </head>
 
@@ -11,10 +13,20 @@
         Olá <span id="usuario_Logado"></span>
     </div>
     <div>
-        <button type="button" onclick="voltar()">Voltar</button>
+        <button type="button" onclick="voltar()">Sair</button>
+    </div>
+    <div>
+        <button type="button" id="filtro01"">Filtrar por Estoque</button>
+    </div>
+    <div>
+        <button type="button" id="dolar">Valor em Dolar</button>
+    </div>
+    <div id="lista-produtos">
+
     </div>
     <script type="text/javascript" src="/projeto/assets/js/home.js">
 
     </script>
+    <script type="text/javascript" src="/projeto/assets/js/funcoes_funcionais.js"></script>
 </body>
 </html>

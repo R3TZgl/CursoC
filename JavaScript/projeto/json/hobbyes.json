@@ -1,0 +1,23 @@
+[
+    {
+        "produto": "Pc",
+        "preco": 2600,
+        "descricao": "loren",
+        "em_estoque": true,
+        "img": "assets/imgs/img0001.jpg"
+    },
+    {
+        "produto": "mouse",
+        "preco": 26,
+        "descricao": "loren",
+        "em_estoque": false,
+        "img": "assets/imgs/img0002.jpg" 
+    },
+    {
+        "produto": "teclado",
+        "preco": 350,
+        "descricao": "loren",
+        "em_estoque": true,
+        "img": "assets/imgs/img0003.jpg" 
+    }
+]

@@ -5,6 +5,8 @@ const sobrenome = localStorage.getItem("sobrenome");
 elemento_usuario.innerText = `${nome_usuario} ${sobrenome}`;
 
 
-const voltar =() => {
+const voltar = () => {
     window.location.assign("/projeto/index.html")
+    localStorage.clear();
 }
+

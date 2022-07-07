@@ -1,0 +1,16 @@
+#lista-produtos{
+    font-size: 3em;
+    padding: 3em;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.produto{
+    width: 12em;
+    padding: 1.5em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(36, 36, 36);
+    color: aliceblue;
+}
