@@ -36,7 +36,6 @@ console.log("filter:", produtos_em_estoque)
  */
 let statusDolar = false;
 const converterDolar = (elemento) => {
-    statusDolar = !statusDolar
     const newElemento = {...elemento};
     if(statusDolar){
         newElemento.preco = newElemento.preco / 10;       
@@ -49,6 +48,7 @@ const converterDolar = (elemento) => {
 const btnDolar = document.getElementById("dolar");
 
 btnDolar.onclick = () => {
+    statusDolar = !statusDolar
     const produtos_em_dolar = vetorProduto.map(converterDolar);
     exibirProdutos(produtos_em_dolar);
 }
