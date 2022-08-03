@@ -5,6 +5,10 @@ const renderiza_foto = (foto) =>{
     img_foto.src=`${foto}`;
 }
 
+const renderiza_nome = (nome) => {
+    const nick = document.getElementById()    
+}
+
 fetch('https://api.github.com/users/R3TZgl')
     .then((response => response.json()))
     .then(data => {
