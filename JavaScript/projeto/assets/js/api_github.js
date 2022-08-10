@@ -24,9 +24,8 @@ const upar_bio = (dataBio) => {
 }
 
 const upar_repositorio = (data) => {
-    const repositorio = document.getElementById("repoName");
-    repositorio.innerText = `${data.name}`;
-    repositorio.href = `${data.html_url}`;
+    const repositorio = document.getElementById("repo");
+    repositorio.innerHTML += `<a href="${data.html_url}">${data.name}</a>`;
 }
 
 
@@ -52,7 +51,7 @@ fetch("https://api.github.com/users/R3TZgl/repos", {headers: headers})
     .then((response => response.json()))
     .then(data => {
         console.log(data);
-        data.foreach(upar_repositorio)
+        data.forEach(upar_repositorio)
         
     })
     .catch( error => {  // Para status de erro

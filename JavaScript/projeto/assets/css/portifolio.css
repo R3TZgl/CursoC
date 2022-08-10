@@ -34,8 +34,6 @@ div{
     animation-name: move;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    
-    position: relative;
 }
 h1{
     font-size: 4em;
