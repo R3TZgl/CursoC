@@ -25,7 +25,7 @@ const upar_bio = (dataBio) => {
 
 const upar_repositorio = (data) => {
     const repositorio = document.getElementById("repo");
-    repositorio.innerHTML += `<a href="${data.html_url}">${data.name}</a>`;
+    repositorio.innerHTML += `<a href="${data.html_url}" target="_blank">${data.name}</a><br><br>`;
 }
 
 
